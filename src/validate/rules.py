@@ -37,3 +37,9 @@ def rule_known_commodity(df):
     bad_commodity = df[~df["commodity"].str.lower().isin(known)].copy()
     bad_commodity["Reason"] = "Unknown Commodity"
     return bad_commodity
+
+def rule_negative_rain(df):
+    neg_rain = df[df["rainfall"] < 0].copy()
+    neg_rain["Reason"] = "Negative rainfall"
+    return neg_rain
+

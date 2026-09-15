@@ -13,8 +13,7 @@ def clean_data(path=raw_path):
     if len(repeated_rows) > 0:
        df = df.drop_duplicates()
        log.append(f"Removed {len(repeated_rows)} duplicate rows.")
-    return df, log
-    
+   
     duplicate_ids = rules.rule_duplicate_ids(df)
     if len(duplicate_ids) > 0:
         before = len(df)
@@ -28,7 +27,7 @@ def clean_data(path=raw_path):
                     f"(treated as invalid, not imputed — a fabricated price "
                     f"would be misleading).")
         
-    bad_dates = rules.rule_valid_date(df)
+    bad_dates = rules.rule_valid_date_format(df)
     if len(bad_dates) > 0:
         df = df.drop(index=bad_dates.index)
         log.append(f"Removed {len(bad_dates)} rows with unparseable dates.")
