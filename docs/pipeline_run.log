@@ -1,0 +1,75 @@
+2026-09-25 12:30:56 | INFO | ---Pipeline run started---
+2026-09-25 12:30:56 | INFO | Stage 1: Ingesting ssource a
+2026-09-25 12:30:56 | INFO | Stage 11: Ingested source a rows out:1010
+2026-09-25 12:38:06 | INFO | ---Pipeline run started---
+2026-09-25 12:38:06 | INFO | Stage 1: Ingesting source a
+2026-09-25 12:38:06 | INFO | Stage 11: Ingested source a rows out:1010
+2026-09-25 12:38:06 | INFO | Stage 2: Ingesting source b
+2026-09-25 12:38:06 | INFO | Stage 12: Ingested source b rows out:732
+2026-09-25 12:46:01 | INFO | ---Pipeline run started---
+2026-09-25 12:46:01 | INFO | Stage 1: Ingesting source a
+2026-09-25 12:46:01 | INFO | Stage 11: Ingested source a rows out:1010
+2026-09-25 12:46:01 | INFO | Stage 2: Ingesting source b
+2026-09-25 12:46:01 | INFO | Stage 22: Ingested source b rows out:732
+2026-09-25 12:46:01 | INFO | Stage 3: Cleaning  source_a...
+2026-09-25 12:46:01 | INFO | Stage 33: Cleaned source a rows out:1010
+2026-09-25 12:46:01 | INFO | stage 33: Cleaned prices:905
+2026-09-25 12:46:01 | INFO | Stage 33: Cleaning decisions: ['Removed 10 duplicate rows.', 'Dropped 17 rows with duplicate record_id (kept first occurrence).', 'Removed 52 rows with price <= 0 (treated as invalid, not imputed — a fabricated price would be misleading).', 'Removed 26 rows with unparseable dates.', "Imputed 175 missing 'market' values with 'Unknown'."]
+2026-09-25 12:48:15 | INFO | ---Pipeline run started---
+2026-09-25 12:48:15 | INFO | Stage 1: Ingesting source a
+2026-09-25 12:48:15 | INFO | Stage 11: Ingested source a rows out:1010
+2026-09-25 12:48:15 | INFO | Stage 2: Ingesting source b
+2026-09-25 12:48:15 | INFO | Stage 22: Ingested source b rows out:732
+2026-09-25 12:48:15 | INFO | Stage 3: Cleaning  source_a...
+2026-09-25 12:48:15 | INFO | Stage 33: Cleaned source a rows out:1010
+2026-09-25 12:48:15 | INFO | stage 33: Cleaned prices:905
+2026-09-25 12:48:15 | INFO | Stage 33: Cleaning decisions: 5
+2026-09-25 12:57:19 | INFO | ---Pipeline run started---
+2026-09-25 12:57:19 | INFO | Stage 1: Ingesting source a
+2026-09-25 12:57:19 | INFO | Stage 11: Ingested source a rows out:1010
+2026-09-25 12:57:19 | INFO | Stage 2: Ingesting source b
+2026-09-25 12:57:19 | INFO | Stage 22: Ingested source b rows out:732
+2026-09-25 12:57:19 | INFO | Stage 3: Cleaning  source_a...
+2026-09-25 12:57:19 | INFO | Stage 33: Cleaned source a rows out:1010
+2026-09-25 12:57:19 | INFO | stage 33: Cleaned prices:905
+2026-09-25 12:57:19 | INFO | Stage 33: Cleaning decisions: 5
+2026-09-25 12:57:19 | INFO | Stage 4: ---Merging price and rainfall---
+2026-09-25 12:57:19 | INFO | Stage 44: Merged rows out:262
+2026-09-25 12:58:59 | INFO | ---Pipeline run started---
+2026-09-25 12:58:59 | INFO | Stage 1: Ingesting source a
+2026-09-25 12:58:59 | INFO | Stage 11: Ingested source a rows out:1010
+2026-09-25 12:58:59 | INFO | Stage 2: Ingesting source b
+2026-09-25 12:58:59 | INFO | Stage 22: Ingested source b rows out:732
+2026-09-25 12:58:59 | INFO | Stage 3: Cleaning  source_a...
+2026-09-25 12:58:59 | INFO | Stage 33: Cleaned source a rows out:1010
+2026-09-25 12:58:59 | INFO | stage 33: Cleaned prices:905
+2026-09-25 12:58:59 | INFO | Stage 33: Cleaning decisions: 5
+2026-09-25 12:58:59 | INFO | Stage 4: ---Merging price and rainfall---
+2026-09-25 12:58:59 | INFO | Stage 44: Merged complete: rows in: 905:rows out:262
+2026-09-25 13:09:12 | INFO | ---Pipeline run started---
+2026-09-25 13:09:12 | INFO | Stage 1: Ingesting source a
+2026-09-25 13:09:12 | INFO | Stage 11: Ingested source a rows out:1010
+2026-09-25 13:09:12 | INFO | Stage 2: Ingesting source b
+2026-09-25 13:09:12 | INFO | Stage 22: Ingested source b rows out:732
+2026-09-25 13:09:12 | INFO | Stage 3: Cleaning  source_a...
+2026-09-25 13:09:12 | INFO | Stage 33: Cleaned source a rows out:1010
+2026-09-25 13:09:12 | INFO | stage 33: Cleaned prices:905
+2026-09-25 13:09:12 | INFO | Stage 33: Cleaning decisions: 5
+2026-09-25 13:09:12 | INFO | Stage 4: ---Merging price and rainfall---
+2026-09-25 13:09:12 | INFO | Stage 44: Merged complete: rows in: 905:rows out:262
+2026-09-25 13:09:12 | INFO | Stage 5: ---Saving merged file---
+2026-09-25 13:09:12 | INFO | Stage 55: Saving complete: Saved 262 rows 
+2026-09-25 13:10:40 | INFO | ---Pipeline run started---
+2026-09-25 13:10:40 | INFO | Stage 1: Ingesting source a
+2026-09-25 13:10:40 | INFO | Stage 11: Ingested source a rows out:1010
+2026-09-25 13:10:40 | INFO | Stage 2: Ingesting source b
+2026-09-25 13:10:40 | INFO | Stage 22: Ingested source b rows out:732
+2026-09-25 13:10:40 | INFO | Stage 3: Cleaning  source_a...
+2026-09-25 13:10:40 | INFO | Stage 33: Cleaned source a rows out:1010
+2026-09-25 13:10:40 | INFO | stage 33: Cleaned prices:905
+2026-09-25 13:10:40 | INFO | Stage 33: Cleaning decisions: 5
+2026-09-25 13:10:40 | INFO | Stage 4: ---Merging price and rainfall---
+2026-09-25 13:10:40 | INFO | Stage 44: Merged complete: rows in: 905:rows out:262
+2026-09-25 13:10:40 | INFO | Stage 5: ---Saving merged file---
+2026-09-25 13:10:40 | INFO | Stage 55: Saving complete: Saved 262 rows 
+2026-09-25 13:10:40 | INFO | ---Pipeline run completed---
