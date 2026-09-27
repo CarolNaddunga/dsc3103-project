@@ -1,0 +1,7 @@
+I traded away the simplicity of keeping all the data in one flat table for a more organised structure that reduces repeated data and makes analytical queries easier to manage.
+
+step 5 
+The performance difference is small because the dataset only contains 889 observations. The flat Parquet query was faster at 0.0008 seconds, while the star-schema query took 0.0060 seconds. This is because the star-schema query requires an additional join between the fact and dimension tables. However, the star schema provides a more organised structure that is easier to maintain and analyse, especially when working with larger and more complex datasets.
+
+Step 6
+At the current size of the dataset, the star schema does not provide a performance advantage. The flat Parquet query took 0.0008 seconds, while the star schema query took 0.0060 seconds. This means that, for this small dataset of 889 observations, querying the Parquet file directly was faster. The star schema takes slightly longer because the query has to join the fact table with the dimension table before calculating the result. However, the star schema is still useful because it gives the data a clearer structure, reduces repetition of descriptive values and makes analytical queries easier to organise as the system grows. Therefore, although the additional complexity may not be necessary purely for performance at the current data size, it could become more useful when the dataset becomes larger and more dimensions or analytical requirements are introduced.
